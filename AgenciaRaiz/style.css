@@ -1,0 +1,330 @@
+/* root */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --primary-color: #3011bc;
+  --secondary-color: #607080;
+
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #7262bbd5;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+/* inicio  menu */
+.content-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-bg-color) 100%
+  );
+  margin-bottom: 2rem;
+}
+
+#menu-h ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu-h ul li {
+  display: inline-flex;
+}
+
+#menu-h ul li a {
+  color: var(--primary-bg-color);
+  padding: 20px;
+  display: inline-flex;
+  text-decoration: none;
+  transition: background 0.4s;
+}
+
+#menu-h ul li a:hover {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
+}
+
+/* fim menu */
+
+/* inicio slider */
+.slider {
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.slider > .slider-content {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  transition: all 500ms ease;
+  text-align: center;
+}
+
+.slider > .slider-content > .slider-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content {
+  transform: translateX(0%);
+}
+.slider > input:nth-child(2):checked ~ .slider-content {
+  transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content {
+  transform: translateX(-200%);
+}
+
+input[type='radio'] {
+  /* removendo estilos padrao */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* personalizando radiobutton */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  margin-left: 3.8rem;
+  /* background-color contentet radio*/
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+}
+
+/* cor do radiobutton*/
+input[type='radio']:checked {
+  background-color: var(--primary-color);
+}
+
+/* fim slider */
+
+/* inico destino */
+
+#destino h2 {
+  margin-bottom: 1.2rem;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin-left: 3.8rem;
+  margin-right: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+.left {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.right {
+  flex: 1;
+  background-image: url('./img/destino.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > p {
+  text-align: right;
+}
+
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  margin-top: 20px;
+}
+
+.form-field:focus {
+  border-color: var(--primary-color);
+}
+
+.form > button {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-bg-color) 100%
+  );
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+}
+.form > button:hover {
+  cursor: pointer;
+}
+.btn {
+  padding: 12px 10px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--secondary-bg-color) 100%
+  );
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+#destino h1 {
+  color: var(--secondary-color);
+}
+h1 > span {
+  color: var(--primary-color);
+}
+
+/* fim destino */
+
+/* inicio promoçoes */
+
+.container-promo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 375px;
+  height: 500px;
+}
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  margin: 20px 0 20px;
+  color: var(--secondary-color);
+}
+
+.promo h5 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.promo h5 span {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* fim promoçoes */
+
+/* inico contatos */
+
+.container-contato {
+  margin-left: 3.8rem;
+  margin-right: 3.8rem;
+  margin-bottom: 2rem;
+}
+
+.container-contato form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-field-area {
+  height: 200px;
+}
+
+/* fim contato */
+
+/* inico footer */
+.footer {
+  background-color: var(--secondary-color);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer .footer-c p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0 0 10px 10px;
+}
+
+/* Footer links */
+
+.footer p.footer-links a {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 10px;
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: var(--primary-bg-color);
+}
+.footer p.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+/* fim footer */
+
+/* viagens */
+table {
+  margin: auto;
+  margin-top: 20px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.alt {
+  color: green;
+}
+.exc {
+  color: red;
+}
