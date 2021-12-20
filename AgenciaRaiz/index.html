@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agência de Viagem</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <header>
+      <div class="content-menu">
+        <nav id="menu-h">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="#destino">Destino</a></li>
+
+            <li><a href="#promocao">Promoções</a></li>
+
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- slides-->
+    <section class="slider">
+      <input name="slide" type="radio" checked />
+      <input name="slide" type="radio" />
+      <input name="slide" type="radio" />
+
+      <div class="slider-content">
+        <div class="slider-item">
+          <img src="./img/slide1.png" alt="" />
+        </div>
+        <div class="slider-item">
+          <img src="./img/slide2.png" alt="" />
+        </div>
+        <div class="slider-item">
+          <img src="./img/slide3.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Destino -->
+    <section id="destino">
+      <h2>Qual seu próximo destino?</h2>
+      <div class="container">
+        <div class="left">
+          <div class="header">
+            <h1>
+              Vamos fazer um tour<br />
+              <span>Descubra a beleza</span>
+            </h1>
+          </div>
+          <form class="form">
+            <input
+              type="text"
+              class="form-field animation"
+              placeholder="📍 De Onde"
+              required=""
+            />
+            <input
+              type="text"
+              class="form-field animation"
+              placeholder="📍 Para Onde"
+              required=""
+            />
+            <input
+              type="date"
+              class="form-field"
+              value="data de ida"
+              required=""
+            />
+            <input
+              type="date"
+              class="form-field"
+              value="data de volta"
+              required=""
+            />
+
+            <a class="btn" href="viagens.html">Agendar</a>
+          </form>
+        </div>
+        <div class="right"></div>
+      </div>
+    </section>
+
+    <!-- Promoçoes -->
+    <section id="promocao">
+      <h2>Promoções para sua viagem</h2>
+      <div class="container-promo">
+        <div class="card">
+          <div class="card-header">
+            <img src="./img/maldives.png" alt="maldives" />
+          </div>
+          <div class="card-body">
+            <h4>
+              Mermaid Beach Resort: A maneira mais alegre de passar suas férias
+            </h4>
+            <p>📍maldivas 📅4 dias</p>
+            <div class="promo">
+              <p><strike>200</strike></p>
+              <h5>$ 175 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./img/cinnamon.png" alt="cinnamon" />
+          </div>
+          <div class="card-body">
+            <h4>
+              Desfrute de um cruzeiro romântico no lado ensolarado da vida
+            </h4>
+            <p>📍cinnamon 📅4 dias</p>
+            <div class="promo">
+              <p><strike>300</strike></p>
+              <h5>$ 250 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="img/dhigu.png" alt="dhigu" />
+          </div>
+          <div class="card-body">
+            <h4>Fihalhohi Island Resort: destino de luxo sem compromisso</h4>
+            <p>📍dhigu 📅4 dias</p>
+            <div class="promo">
+              <p><strike>375</strike></p>
+              <h5>$ 300 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-promo">
+        <div class="card">
+          <div class="card-header">
+            <img src="./img/rio.png" alt="maldives" />
+          </div>
+          <div class="card-body">
+            <h4>Rio de Janeiro</h4>
+            <p>📅18 dias</p>
+            <div class="promo">
+              <p><strike>500</strike></p>
+              <h5>R$ 474 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="./img/Florianopolis.png" alt="cinnamon" />
+          </div>
+          <div class="card-body">
+            <h4>Florianópolis</h4>
+            <p>📅20 dias</p>
+            <div class="promo">
+              <p><strike>850</strike></p>
+              <h5>R$ 700 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="img/Fortaleza.png" alt="dhigu" />
+          </div>
+          <div class="card-body">
+            <h4>Fortaleza</h4>
+            <p>📅8 dias</p>
+            <div class="promo">
+              <p><strike>675</strike></p>
+              <h5>R$ 600 <span>/por pessoa</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatos -->
+    <section id="contatos">
+      <h2>Entre em contato</h2>
+      <div class="container-contato">
+        <form
+          action="https://formsubmit.co/douglassilvadaprado@gmail.com"
+          method="POST"
+          style="padding: 10px"
+        >
+          <div class="form">
+            <input
+              type="text"
+              placeholder="Digite seu Nome"
+              name="name"
+              required=""
+              class="form-field"
+            />
+            <input
+              type="email"
+              placeholder="Digite seu Email"
+              name="email"
+              required=""
+              class="form-field"
+            />
+            <textarea
+              placeholder="Digite sua Mensagem"
+              rows="4"
+              cols="50"
+              name="message"
+              required=""
+              class="form-field form-field-area"
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+
+        <a href="#destino">Destino</a>
+
+        <a href="#promocao">Promoções</a>
+
+        <a href="#contato">Contato</a>
+      </p>
+      <div class="footer-c">
+        <p>Agencia de Viagem &copy; 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
