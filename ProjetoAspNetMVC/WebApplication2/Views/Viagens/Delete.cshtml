@@ -1,0 +1,57 @@
+﻿@model WebApplication2.Models.Viagens
+
+@{
+    ViewBag.Title = "Deletar";
+}
+
+
+
+<div class="container my-5 vh-100">
+    <h3 class="text-danger">Tem certeza que deseja apagar isso?</h3>
+    <h4 class="primary-color">Deletar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Origem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Origem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VOLTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VOLTA)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar" class="btn btn-danger" /> |
+            @Html.ActionLink("Voltar", "Index")
+        </div>
+    }
+</div>
