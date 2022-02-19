@@ -2,6 +2,7 @@
 
 <h2>Video Demo</h2>
 https://youtu.be/cdRYnczmGpQ
+<img src="/Gif/videoDemo.gif" />
 
 <h2>Modelo Conceitual</h2>
 <img src="Modelagem de Dados/conceitual.PNG"/>
